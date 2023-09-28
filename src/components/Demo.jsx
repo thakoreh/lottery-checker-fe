@@ -45,9 +45,9 @@ const Demo = () => {
               <h2 className="font-satoshi font-bold text-gray-600 text-xl">Your <span className='blue_gradient'>Result</span></h2>
             </div>
             <div className="summary_box">
-              {getResult>50?
+              {getResult<33?
               <p className='font-inter font-medium text-lg text-green-700'>
-                Your Chosen Numbers are Strong. Good luck on draw day !
+                Your Chosen Numbers are Strong. Good luck on draw day ! : {getResult}
                 </p>
                 :
                 getResult ===''
@@ -58,7 +58,7 @@ const Demo = () => {
                 :
                 <div className='justify-center items-center'>
                 <p className='font-inter font-medium text-lg text-red-700'>
-                Your Chosen Numbers are Weak !
+                Your Chosen Numbers are Weak ! : {getResult}
                 </p>
                 <p className='font-inter font-medium text-sm text-red-700'>
                 Please Try Different Numbers.
